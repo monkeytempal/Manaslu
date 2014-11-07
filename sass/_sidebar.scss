@@ -1,0 +1,114 @@
+/* ----------------------------------------- */
+/* Sidebar Styles                            */
+/* ----------------------------------------- */
+.widget {
+	margin-bottom:40px;
+
+	.widget-header {
+		margin-bottom:20px;
+
+		h3 {
+			margin:0;
+		}
+
+		border-bottom:2px solid #DDD;
+		position:relative;
+
+		:before {
+			content: " ";
+			height:2px;
+			width:25%;
+			background:$theme_color;
+			position:absolute;
+			bottom:-2px;
+		}
+	}
+
+	.sidebar-search {
+		position:relative;
+		overflow:hidden;
+
+		.search-box {
+			padding:8px 80px 8px 8px;
+			border: 1px solid #DDD;
+			box-sizing:border-box;
+			font-size:$base_fontSize - 2;
+			color: lighten($base_fontColor, 10%);
+		}
+
+		.btn {
+			position:absolute;
+			right:0;
+			top:0;
+			padding:0 15px;
+			height:100%;
+			box-sizing:padding-box;
+		}
+		
+	}
+
+	.recent-posts {
+		ul {
+			padding:0;
+			margin:0;
+			list-style: none;
+
+			li {
+				overflow:hidden;
+				margin-bottom:10px;
+				padding-bottom:10px;
+				border-bottom:1px solid #DDD;
+				
+				&:last-child {
+					border:0;
+					margin:0;
+					padding:0;
+				}
+			}
+		}
+		
+		.item-image {
+			overflow: hidden;
+			height:80px;
+
+			IMG {
+				width: 100%;
+				height:100%;
+			}
+		}
+
+		.item-details {
+			float: left;
+
+			.title {
+				font-size: $base_fontSize + 2;
+				line-height: 18px;
+				overflow:hidden;
+				display:block;
+				margin-bottom:10px;
+			}
+		}
+	}
+
+
+	.recent-comments {
+		ul {
+			margin:0;
+			padding:0;
+			list-style: none;
+		}
+
+		li {
+			overflow:hidden;
+			margin-bottom:20px;
+			padding-bottom:20px;
+			border-bottom:1px solid #DDD;
+			
+			&:last-child {
+				border:0;
+				margin:0;
+				padding:0;
+			}
+		}
+	}
+}

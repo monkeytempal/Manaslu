@@ -1,0 +1,81 @@
+/* ------------------------------------- */
+/* Header Styles                         */
+/* ------------------------------------- */
+#header {
+	min-height:40px;
+	padding:27px 0;
+	background-color: #fff; 
+	@include box-shadow(0 1px 2px #dddddc); 
+
+  .mobile-menu {
+  	display:none;
+  	margin-top:1em;
+
+  	.fa {
+  		font-size: $base_fontSize + 4;
+  		margin-right:5px;
+  	}
+
+  	.mobilenav-trigger {
+		display:block;
+		padding:0.5em 1em;
+		border:1px solid #ddd;
+		font-weight: bold;
+		font-size: $base_fontSize + 2;
+  	}
+
+  	.mobilenav-trigger.active {
+  		background: $theme_color;
+  		color: #FFF;
+  	}
+
+  	#mobilenav {
+	  	display: none;
+  		padding:0;
+  		border:1px solid #ddd;
+
+  		li {
+	  		border-bottom:1px solid #ddd;
+
+	  		a {
+  				display:block;
+  				padding:1em;
+
+          &:hover, &:active {
+            background: $theme_color;
+            color: #FFF;
+          }
+	  		}
+
+	  		&:last-child {
+	  			border:none;
+	  			margin:0;
+	  		}
+	  	}
+  	}
+  }
+
+  .main-menu {
+  	float:right;
+  	margin-top:14px;
+
+  	ul {
+  		float:right;
+  		margin:0;
+  		li {
+  			display:inline-block;
+  			margin-left:35px;
+
+  			&:first-child{
+  				margin:0;
+  			}
+
+  			a {
+  				color: $theme_color;
+  				//font-weight: bold;
+  				font-size: $base_fontSize + 4;
+  			}
+  		}
+  	}
+  }
+}

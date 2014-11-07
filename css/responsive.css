@@ -1,0 +1,159 @@
+/* ------------------------------- */
+/* Configurations                 */
+/* ------------------------------ */
+@media all and (max-width: 1024px) {
+  body {
+    font-size: 13px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  h5 {
+    font-size: 14px;
+  }
+
+  h6 {
+    font-size: 12px;
+  }
+
+  .hero-banner .hero-bannerContainer p {
+    font-size: 20px;
+  }
+
+  .testimonials .client-avatar {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  .latest-posts .meta {
+    font-size: 12px;
+  }
+
+  #footer .recent-items .item-details .title {
+    font-size: 14px;
+  }
+}
+@media all and (max-width: 767px) {
+  .container {
+    width: 92%;
+    margin: 0 4%;
+  }
+
+  .grid, .grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_10, .grid_11, .grid_12 {
+    width: 100%;
+    display: block;
+    float: none;
+    clear: both;
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #header .logoContainer {
+    text-align: center;
+  }
+  #header .mobile-menu {
+    display: block;
+  }
+  #header .main-menu {
+    display: none;
+  }
+
+  #homepageSlider .item {
+    height: 250px;
+  }
+
+  .content {
+    margin-top: 30px;
+  }
+
+  .hero-banner .hero-bannerContainer {
+    display: block;
+  }
+  .hero-banner .hero-bannerContainer .banner-text {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .hero-banner .hero-bannerContainer .banner-btn {
+    display: block;
+  }
+
+  .theme-features article {
+    margin-bottom: 20px;
+  }
+
+  .testimonials .client-avatar {
+    display: none;
+  }
+  .testimonials .testimonials-large {
+    margin-bottom: 20px;
+  }
+  .testimonials .testimonials-small {
+    margin-bottom: 20px;
+  }
+  .testimonials .testimonials-small .testimonial .pull-right {
+    margin-bottom: 10px;
+  }
+
+  .latest-posts article {
+    margin-bottom: 20px;
+  }
+  .latest-posts .post-title {
+    margin-bottom: 10px;
+  }
+
+  #footer .footer_bottom {
+    text-align: center;
+  }
+  #footer .footer_bottom .developer {
+    text-align: center;
+  }
+
+  /* ----------------------------------------- */
+  /* Sidebar Styles                            */
+  /* ----------------------------------------- */
+  #sidebar {
+    margin-top: 40px;
+  }
+
+  .widget .recent-posts .item-image {
+    height: 150px;
+    margin-bottom: 10px;
+  }
+  .widget .recent-posts .item-image IMG {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* ----------------------------------------- */
+  /* Comment Styles                            */
+  /* ----------------------------------------- */
+  #comments .user-avatar {
+    display: none;
+  }
+}
+@media all and (max-width: 479px) {
+  #homepageSlider {
+    height: 200px;
+  }
+  #homepageSlider .item IMG {
+    min-height: 100%;
+    width: 100;
+  }
+}

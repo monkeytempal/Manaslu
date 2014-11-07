@@ -1,0 +1,83 @@
+/* ----------------------------------------- */
+/* Blog Page styles                          */
+/* ----------------------------------------- */
+.blog-wrapper {
+	overflow:hidden;
+	.blog-post {
+		padding-bottom:40px;
+		border-bottom: 1px solid #DDD;
+		margin-bottom:40px; 
+
+		&:last-child {
+			border: none;
+			margin-bottom:0;
+		}
+
+		h2 {
+			font-size: $base_fontSize + 12;
+			margin:0;
+			line-height: 30px;
+		}
+
+		.meta {
+			display:table;
+			vertical-align:middle;
+			color: $theme_color;
+			margin:10px 0;
+
+			.author, .date, .fa, .comments {
+				display: table-cell;
+				vertical-align:middle;
+			}
+
+			.fa {
+				font-size: $base_fontSize - 8;
+				padding: 0 10px;
+			}
+		}
+
+		.featured-img {
+			height:280px;
+			overflow:hidden;
+			width:100%;
+
+			IMG {
+				position: relative;
+				max-height: 100%;
+				left: 50%;
+				@include translateX(-50%);
+
+				@media (min-width: 768px) {
+			      top: 50%;
+			      left: 0;
+			      max-height: none;
+			      width: 100%;
+			      @include translateY(-50%);
+			    }
+			}
+		}
+	}
+}
+
+.pagination {
+	ul {
+		padding:0;
+		overflow: hidden;
+		list-style: none;
+
+		li {
+			margin-right:10px;
+			overflow: hidden;
+			float: left;
+
+			a {
+				display:block;
+				border: 1px solid #DDD;
+				color: $base_fontColor;
+				background: #f4f4f4;
+				padding: 10px 15px;
+				font-weight: bold;
+			}
+		}
+	}
+}

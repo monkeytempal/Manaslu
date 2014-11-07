@@ -1,0 +1,1 @@
+Manaslu - Free wordpress theme created by Bijay Pakhrin

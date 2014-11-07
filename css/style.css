@@ -1,0 +1,692 @@
+/* ------------------------------------- */
+/* Global Styles                         */
+/* ------------------------------------- */
+body {
+  font: normal 14px "Roboto", sans-serif;
+  color: #969696;
+}
+
+a {
+  text-decoration: none;
+  color: #00a388;
+}
+
+h1 {
+  font-size: 26px;
+  color: #00a388;
+}
+
+h2 {
+  font-size: 22px;
+  color: #00a388;
+}
+
+h3 {
+  font-size: 20px;
+  color: #00a388;
+}
+
+h4 {
+  font-size: 18px;
+  color: #00a388;
+}
+
+h5 {
+  font-size: 16px;
+  color: #00a388;
+}
+
+h6 {
+  font-size: 14px;
+  color: #00a388;
+}
+
+/* --------- Global Classes ---------- */
+.mainframe {
+  width: 100%;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.btn {
+  display: block;
+  text-align: center;
+  background-color: #00a388;
+  color: #FFF;
+  border: none;
+  padding: 15px;
+  font-family: "Roboto", sans-serif;
+  line-height: 14px;
+}
+
+.btn-large {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: normal;
+}
+
+.content {
+  margin-top: 60px;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.preloader {
+  display: block;
+  background: url(../img/loading.gif) center center no-repeat;
+}
+
+/* ------------------------------------- */
+/* Header Styles                         */
+/* ------------------------------------- */
+#header {
+  min-height: 40px;
+  padding: 27px 0;
+  background-color: #fff;
+  -moz-box-shadow: 0 1px 2px #dddddc;
+  -webkit-box-shadow: 0 1px 2px #dddddc;
+  box-shadow: 0 1px 2px #dddddc;
+}
+#header .mobile-menu {
+  display: none;
+  margin-top: 1em;
+}
+#header .mobile-menu .fa {
+  font-size: 18px;
+  margin-right: 5px;
+}
+#header .mobile-menu .mobilenav-trigger {
+  display: block;
+  padding: 0.5em 1em;
+  border: 1px solid #ddd;
+  font-weight: bold;
+  font-size: 16px;
+}
+#header .mobile-menu .mobilenav-trigger.active {
+  background: #00a388;
+  color: #FFF;
+}
+#header .mobile-menu #mobilenav {
+  display: none;
+  padding: 0;
+  border: 1px solid #ddd;
+}
+#header .mobile-menu #mobilenav li {
+  border-bottom: 1px solid #ddd;
+}
+#header .mobile-menu #mobilenav li a {
+  display: block;
+  padding: 1em;
+}
+#header .mobile-menu #mobilenav li a:hover, #header .mobile-menu #mobilenav li a:active {
+  background: #00a388;
+  color: #FFF;
+}
+#header .mobile-menu #mobilenav li:last-child {
+  border: none;
+  margin: 0;
+}
+#header .main-menu {
+  float: right;
+  margin-top: 14px;
+}
+#header .main-menu ul {
+  float: right;
+  margin: 0;
+}
+#header .main-menu ul li {
+  display: inline-block;
+  margin-left: 35px;
+}
+#header .main-menu ul li:first-child {
+  margin: 0;
+}
+#header .main-menu ul li a {
+  color: #00a388;
+  font-size: 18px;
+}
+
+/* ------------------------------------- */
+/* Slider Styles                         */
+/* ------------------------------------- */
+#homepageSlider {
+  width: 100%;
+  min-height: 200px;
+  overflow: hidden;
+  background: url("../img/slide_bg.jpg") repeat;
+}
+#homepageSlider .item {
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+}
+#homepageSlider .item IMG {
+  position: relative;
+  max-height: 100%;
+  left: 50%;
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+@media (min-width: 768px) {
+  #homepageSlider .item IMG {
+    top: 50%;
+    left: 0;
+    max-height: none;
+    width: 100%;
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+#homepageSlider .owl-controls {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+#homepageSlider .owl-controls .owl-page span {
+  background: #FFF;
+}
+
+/* ------------------------------------- */
+/* Hero Banner Styles                    */
+/* ------------------------------------- */
+.hero-banner {
+  width: 100%;
+}
+.hero-banner .hero-bannerContainer {
+  display: table;
+  background-color: #f2f2f2;
+  padding: 2%;
+}
+.hero-banner .hero-bannerContainer .banner-text, .hero-banner .hero-bannerContainer .banner-btn {
+  float: none;
+  display: table-cell;
+  vertical-align: middle;
+}
+.hero-banner .hero-bannerContainer p {
+  color: #939393;
+  font-size: 22px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.27);
+  margin: 0 4% 0 0;
+}
+.hero-banner .hero-bannerContainer .btn {
+  width: 100%;
+}
+
+/* ------------------------------------- */
+/* Testimonials Styles                   */
+/* ------------------------------------- */
+.testimonials .client-avatar IMG {
+  -moz-transform-style: flat;
+  -webkit-transform-style: flat;
+  transform-style: flat;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 5px solid #e5e5e5;
+  overflow: hidden;
+  max-width: 85px;
+  max-height: 85px;
+}
+.testimonials .pull-right .client-avatar IMG {
+  float: right;
+}
+.testimonials blockquote {
+  margin: 0;
+}
+.testimonials blockquote cite {
+  float: right;
+}
+.testimonials .testimonials-large {
+  position: relative;
+}
+.testimonials .testimonials-large .owl-controls {
+  position: absolute;
+  right: 0;
+  top: -50px;
+}
+.testimonials .testimonials-large .owl-controls .owl-page span {
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+}
+.testimonials .testimonials-small {
+  position: relative;
+}
+.testimonials .testimonials-small blockquote {
+  padding: 10px;
+  border: 1px solid #ededed;
+  background: #f3f3f3;
+  font-size: 12px;
+  position: relative;
+}
+.testimonials .testimonials-small blockquote P {
+  margin: 0;
+}
+.testimonials .testimonials-small blockquote:after {
+  border-bottom: 13px solid transparent;
+  border-left: 25px solid #f3f3f3;
+  border-top: 0 solid transparent;
+  bottom: -14px;
+  content: " ";
+  height: 0;
+  position: absolute;
+  right: -1px;
+  width: 0;
+  z-index: -1;
+}
+.testimonials .testimonials-small .owl-controls {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.testimonials .testimonials-small .owl-controls .owl-page span {
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+}
+
+/* ------------------------------------- */
+/* Latest Posts - Index Styles           */
+/* ------------------------------------- */
+.latest-posts .post-image {
+  width: 100%;
+  height: 160px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.latest-posts .post-image a {
+  display: block;
+  height: 160px;
+}
+.latest-posts .post-image IMG {
+  min-height: 100%;
+  width: 100%;
+}
+.latest-posts .post-title {
+  margin: 0 0 20px;
+  font-weight: normal;
+  line-height: 18px;
+}
+.latest-posts .meta {
+  display: table;
+  vertical-align: middle;
+  font-style: italic;
+  color: #00a388;
+}
+.latest-posts .meta .date, .latest-posts .meta .fa, .latest-posts .meta .comments {
+  display: table-cell;
+  vertical-align: middle;
+}
+.latest-posts .meta .fa {
+  padding: 0 10px;
+}
+.latest-posts .fa {
+  font-size: 6px;
+}
+
+/* ------------------------------------- */
+/* Footer Styles                         */
+/* ------------------------------------- */
+#footer {
+  margin-top: 60px;
+  color: #FFF;
+}
+#footer h1, #footer h2, #footer h3, #footer h4, #footer a {
+  color: #FFF;
+}
+#footer .footer_top {
+  background: #00a388;
+  padding: 3% 0;
+}
+#footer .footer_bottom {
+  background: #333;
+  padding: 20px 0;
+}
+#footer .footer_bottom .developer {
+  text-align: right;
+}
+#footer .recent-items ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#footer .recent-items ul li {
+  overflow: hidden;
+  display: block;
+  margin-bottom: 15px;
+}
+#footer .recent-items ul li:last-child {
+  margin-bottom: 0;
+}
+#footer .recent-items .item-image, #footer .recent-items .item-deails {
+  float: left;
+}
+#footer .recent-items .item-image {
+  width: 70px;
+  height: 60px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+#footer .recent-items .item-details .title {
+  font-weight: bold;
+  font-size: 16px;
+  overflow: hidden;
+  line-height: 18px;
+}
+#footer .recent-items .item-details .meta {
+  display: block;
+}
+#footer .lists-star ul {
+  list-style: none;
+  position: relative;
+  padding-left: 25px;
+  line-height: 18px;
+}
+#footer .lists-star ul li {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+#footer .lists-star ul li:before {
+  font-family: 'FontAwesome';
+  content: "\f005";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 0;
+}
+
+/* ----------------------------------------- */
+/* Blog Page styles                          */
+/* ----------------------------------------- */
+.blog-wrapper {
+  overflow: hidden;
+}
+.blog-wrapper .blog-post {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #DDD;
+  margin-bottom: 40px;
+}
+.blog-wrapper .blog-post:last-child {
+  border: none;
+  margin-bottom: 0;
+}
+.blog-wrapper .blog-post h2 {
+  font-size: 26px;
+  margin: 0;
+  line-height: 30px;
+}
+.blog-wrapper .blog-post .meta {
+  display: table;
+  vertical-align: middle;
+  color: #00a388;
+  margin: 10px 0;
+}
+.blog-wrapper .blog-post .meta .author, .blog-wrapper .blog-post .meta .date, .blog-wrapper .blog-post .meta .fa, .blog-wrapper .blog-post .meta .comments {
+  display: table-cell;
+  vertical-align: middle;
+}
+.blog-wrapper .blog-post .meta .fa {
+  font-size: 6px;
+  padding: 0 10px;
+}
+.blog-wrapper .blog-post .featured-img {
+  height: 280px;
+  overflow: hidden;
+  width: 100%;
+}
+.blog-wrapper .blog-post .featured-img IMG {
+  position: relative;
+  max-height: 100%;
+  left: 50%;
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+@media (min-width: 768px) {
+  .blog-wrapper .blog-post .featured-img IMG {
+    top: 50%;
+    left: 0;
+    max-height: none;
+    width: 100%;
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
+.pagination ul {
+  padding: 0;
+  overflow: hidden;
+  list-style: none;
+}
+.pagination ul li {
+  margin-right: 10px;
+  overflow: hidden;
+  float: left;
+}
+.pagination ul li a {
+  display: block;
+  border: 1px solid #DDD;
+  color: #969696;
+  background: #f4f4f4;
+  padding: 10px 15px;
+  font-weight: bold;
+}
+
+/* ------------------------------------- */
+/* Single Page Styles                    */
+/* ------------------------------------- */
+#singlePostContainer .post-title {
+  margin: 0;
+  line-height: 30px;
+}
+#singlePostContainer .post-meta {
+  display: table;
+  vertical-align: middle;
+  color: #00a388;
+  margin: 10px 0;
+}
+#singlePostContainer .post-meta .author, #singlePostContainer .post-meta .date, #singlePostContainer .post-meta .fa, #singlePostContainer .post-meta .comments {
+  display: table-cell;
+  vertical-align: middle;
+}
+#singlePostContainer .post-meta .fa {
+  font-size: 6px;
+  padding: 0 10px;
+}
+#singlePostContainer .post-info {
+  border-top: 1px solid #DDD;
+  border-bottom: 1px solid #DDD;
+  overflow: hidden;
+  margin: 40px 0;
+}
+#singlePostContainer .post-info P {
+  float: left;
+  margin: 5px 0;
+}
+#singlePostContainer .post-info .tags {
+  border-right: 1px solid #DDD;
+  padding-right: 10px;
+}
+#singlePostContainer .post-info .category {
+  margin-left: 10px;
+}
+
+#comments .user-avatar {
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+#comments .user-avatar IMG {
+  width: 100%;
+}
+#comments .comment-list {
+  overflow: hidden;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #DDD;
+  clear: both;
+}
+#comments .comment-list h4 {
+  margin: 0 0 10px;
+  line-height: 14px;
+}
+#comments .comment-list:last-child {
+  border: none;
+}
+#comments .comment-list .btn {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+#comments .comment-list .replied-comment {
+  margin-top: 20px;
+}
+
+#comment-form .form-header {
+  margin-bottom: 20px;
+  border-bottom: 2px solid #DDD;
+  position: relative;
+}
+#comment-form .form-header h2 {
+  margin: 0;
+}
+#comment-form .form-header :before {
+  content: " ";
+  height: 2px;
+  width: 25%;
+  background: #00a388;
+  position: absolute;
+  bottom: -2px;
+}
+#comment-form .control-group {
+  margin-bottom: 20px;
+}
+#comment-form .control-group .controls {
+  overflow: hidden;
+  clear: both;
+}
+#comment-form .control-group .controls .input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #DDD;
+  padding: 5px;
+}
+
+/* ----------------------------------------- */
+/* Sidebar Styles                            */
+/* ----------------------------------------- */
+.widget {
+  margin-bottom: 40px;
+}
+.widget .widget-header {
+  margin-bottom: 20px;
+  border-bottom: 2px solid #DDD;
+  position: relative;
+}
+.widget .widget-header h3 {
+  margin: 0;
+}
+.widget .widget-header :before {
+  content: " ";
+  height: 2px;
+  width: 25%;
+  background: #00a388;
+  position: absolute;
+  bottom: -2px;
+}
+.widget .sidebar-search {
+  position: relative;
+  overflow: hidden;
+}
+.widget .sidebar-search .search-box {
+  padding: 8px 80px 8px 8px;
+  border: 1px solid #DDD;
+  box-sizing: border-box;
+  font-size: 12px;
+  color: #b0b0b0;
+}
+.widget .sidebar-search .btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0 15px;
+  height: 100%;
+  box-sizing: padding-box;
+}
+.widget .recent-posts ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.widget .recent-posts ul li {
+  overflow: hidden;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #DDD;
+}
+.widget .recent-posts ul li:last-child {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.widget .recent-posts .item-image {
+  overflow: hidden;
+  height: 80px;
+}
+.widget .recent-posts .item-image IMG {
+  width: 100%;
+  height: 100%;
+}
+.widget .recent-posts .item-details {
+  float: left;
+}
+.widget .recent-posts .item-details .title {
+  font-size: 16px;
+  line-height: 18px;
+  overflow: hidden;
+  display: block;
+  margin-bottom: 10px;
+}
+.widget .recent-comments ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.widget .recent-comments li {
+  overflow: hidden;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #DDD;
+}
+.widget .recent-comments li:last-child {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}

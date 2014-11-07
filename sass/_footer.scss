@@ -1,0 +1,92 @@
+/* ------------------------------------- */
+/* Footer Styles                         */
+/* ------------------------------------- */
+
+#footer {
+	margin-top:60px;
+	color:#FFF;
+
+	h1, h2, h3, h4, a {
+		color:#FFF;
+	}
+
+	.footer_top {
+		background: $theme_color;
+		padding:3% 0;
+	}
+
+	.footer_bottom {
+		background: #333;
+		padding:20px 0;
+
+		.developer {
+			text-align: right;
+		}
+	}
+
+	.recent-items {
+		ul {
+			padding:0;
+			margin:0;
+			list-style:none;
+
+			li {
+				overflow:hidden;
+				display:block;
+				margin-bottom:15px;
+
+				&:last-child {
+					margin-bottom:0;
+				}
+			}
+		}
+
+		.item-image, .item-deails {
+			float:left;
+		}
+
+		.item-image {
+			width:70px;
+			height:60px;
+			overflow:hidden;
+			margin-right:10px;
+		}
+
+		.item-details {
+			.title {
+				font-weight:bold;
+				font-size: $base_fontSize + 2;
+				overflow:hidden;
+				line-height: $base_lineHeight;
+			}
+
+			.meta {
+				display:block;
+			}
+		}
+	}
+
+
+	.lists-star {
+		ul {
+			list-style:none;
+			position: relative;
+			padding-left:25px;
+			line-height: $base_lineHeight;
+
+			li {
+				overflow:hidden;
+				margin-bottom:20px;
+
+				&:before {
+					font-family: 'FontAwesome';
+					content: "\f005";
+					width:15px;
+					height:15px;
+					position:absolute;
+					left:0;
+				}
+			}
+		}
+	}
+}

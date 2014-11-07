@@ -1,0 +1,48 @@
+/* ------------------------------------- */
+/* Latest Posts - Index Styles           */
+/* ------------------------------------- */
+
+.latest-posts {
+	.post-image{
+		width:100%;
+		height:160px;
+		margin-bottom:20px;
+		overflow:hidden;
+
+		a {
+			display: block;
+			height: 160px;
+		}
+
+		IMG {
+			min-height: 100%;
+    		width: 100%;
+		}
+	}
+
+	.post-title {
+		margin: 0 0 20px;
+		font-weight: normal;
+		line-height: $base_lineHeight;
+	}
+
+	.meta {
+		display:table;
+		vertical-align:middle;
+		font-style: italic;
+		color: $theme_color;
+
+		.date, .fa, .comments {
+			display: table-cell;
+			vertical-align:middle;
+		}
+
+		.fa {
+			padding: 0 10px;
+		}
+	}
+
+	.fa {
+		font-size: $base_fontSize - 8;
+	}
+}

@@ -1,0 +1,40 @@
+/* ------------------------------------- */
+/* Slider Styles                         */
+/* ------------------------------------- */
+#homepageSlider{
+	width:100%;
+	min-height: 200px;
+	overflow:hidden;
+	background:url('../img/slide_bg.jpg') repeat;
+
+	.item {
+		height:500px;
+		width:100%;
+		overflow: hidden;
+
+		IMG {
+			position: relative;
+			max-height:100%;
+			left:50%;
+			@include translateX(-50%);
+
+			@media (min-width: 768px) {
+		      top: 50%;
+		      left: 0;
+		      max-height: none;
+		      width: 100%;
+		      @include translateY(-50%);
+		    }
+		}
+	}
+
+	.owl-controls {
+		position:absolute;
+		bottom:10px;
+		width:100%;
+	}
+
+	.owl-controls .owl-page span {
+		background:#FFF;
+	}
+}

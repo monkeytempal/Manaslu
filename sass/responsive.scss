@@ -1,0 +1,212 @@
+@import "compass";
+
+/* ------------------------------- */
+/* Configurations                 */
+/* ------------------------------ */
+
+$base_fontSize: 12px;
+
+
+@media all and (max-width: 1024px){
+	body {font-size: $base_fontSize + 1;}
+
+	h1 {font-size:$base_fontSize + 12;}
+	h2 {font-size:$base_fontSize + 8;}
+	h3 {font-size:$base_fontSize + 6;}
+	h4 {font-size:$base_fontSize + 4;}
+	h5 {font-size:$base_fontSize + 2;}
+	h6 {font-size:$base_fontSize;}
+
+	.hero-banner {
+		.hero-bannerContainer {
+			p {
+			
+				font-size: $base_fontSize + 8;
+			}
+		}
+	}
+
+	.testimonials {
+		.client-avatar{
+			width: 100%;
+			height: 100%;
+			box-sizing: border-box;
+		}
+	}
+
+	.latest-posts {
+		.meta {
+			font-size: $base_fontSize;
+		}
+	}
+
+	#footer {
+		.recent-items {
+			.item-details {
+				.title {
+					font-size: $base_fontSize + 2;
+				}
+
+				.meta {
+					//clear:both;
+				}
+			}
+		}
+	}
+}
+
+// Ipad and Tablets
+@media all and (max-width: 767px){
+	$columns: 12;
+	$column_width: 100%;
+
+	.container {
+		width:92%;
+		margin:0 4%;
+	}
+	
+	.grid {
+		width: $column_width;
+		display:block;
+		float: none;
+		clear:both;
+		position: relative;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	@for $i from 1 through $columns {
+		.grid_#{$i} {
+			@extend .grid;
+			}
+		}
+
+	#header {
+		.logoContainer {
+			text-align: center;
+		}
+
+		.mobile-menu {display:block;}
+		.main-menu {
+			display:none;
+		}
+	}
+
+	#homepageSlider{
+		.item {
+			height:250px;
+		}
+	}
+
+	.content {
+		margin-top: 30px;
+	}
+
+	.hero-banner {
+		.hero-bannerContainer {
+			display:block; 
+
+			.banner-text {
+				display:block;
+				margin-bottom: 20px;
+				text-align: center;
+			}
+			.banner-btn {
+				display:block;
+			}
+		}
+	}
+
+	.theme-features {
+		article {
+			margin-bottom:20px;
+		}
+	}
+
+	.testimonials {
+		.client-avatar {
+			//border-radius:0;
+			display:none;
+		}
+
+		.testimonials-large {
+			margin-bottom: 20px;
+		}
+
+		.testimonials-small {
+			margin-bottom:20px;
+			.testimonial {
+				.pull-right {
+					margin-bottom:10px;
+				}
+			}
+		}
+	}
+
+
+	.latest-posts {
+		article {
+			margin-bottom: 20px;
+		}
+
+		.post-title{
+			margin-bottom:10px;
+		}
+	}
+
+	#footer {
+		.footer_bottom {
+			text-align: center;
+
+			.developer {
+				text-align: center;
+			}
+		}
+	}
+
+
+	/* ----------------------------------------- */
+	/* Sidebar Styles                            */
+	/* ----------------------------------------- */
+	#sidebar {
+		margin-top:40px;
+	}
+
+	.widget {
+		.recent-posts {
+			.item-image {
+				height:150px;
+				margin-bottom:10px;
+
+				IMG {
+					width: 100%;
+					height:100%;
+				}
+			}
+		}
+	}
+
+	/* ----------------------------------------- */
+	/* Comment Styles                            */
+	/* ----------------------------------------- */
+
+	#comments {
+		.user-avatar {
+			display: none;
+		}
+	}
+}
+
+// Mobile Screen
+@media all and (max-width: 479px){
+	#homepageSlider {
+		height: 200px;
+
+		.item {
+			IMG {
+				min-height: 100%;
+				width: 100;
+			}
+		}
+	}
+}

@@ -1,0 +1,90 @@
+/* ------------------------------------- */
+/* Testimonials Styles                   */
+/* ------------------------------------- */
+.testimonials {
+	.client-avatar {
+		IMG {
+			@include transform-style(flat);
+			@include border-radius(50px); 
+			@include box-sizing(border-box);
+			border: 5px solid #e5e5e5;
+			overflow:hidden;
+			max-width: 85px;
+			max-height: 85px;
+		}	
+	}
+
+	.pull-right {
+		.client-avatar {
+			IMG {
+				float: right;
+			}
+		}
+
+	}
+
+	blockquote {
+		margin:0;
+
+		cite {
+			float:right;
+		}
+	}
+
+	.testimonials-large {
+		position:relative;
+
+		.owl-controls {
+			position:absolute;
+			right:0;
+			top:-50px;
+
+			.owl-page span {
+				width:10px;
+				height:10px;
+				margin:5px;
+			}
+		}
+	}
+
+	.testimonials-small {
+		position:relative; 
+
+		blockquote {
+			padding:10px;
+			border: 1px solid #ededed;
+			background:#f3f3f3;
+			font-size:$base_fontSize - 2;
+			position:relative;
+
+			P {
+				margin:0;
+			}
+
+			&:after {
+				border-bottom: 13px solid transparent;
+			    border-left: 25px solid #f3f3f3;
+			    border-top: 0 solid transparent;
+			    bottom: -14px;
+			    content: " ";
+			    height: 0;
+			    position: absolute;
+			    right: -1px;
+			    width: 0;
+			    z-index: -1;
+			}
+		}
+
+		.owl-controls {
+			position:absolute;
+			left:0;
+			bottom:0;
+
+			.owl-page span {
+				width:10px;
+				height:10px;
+				margin:5px;
+			}
+		}
+	}
+}

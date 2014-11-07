@@ -1,0 +1,29 @@
+/* ------------------------------------- */
+/* Hero Banner Styles                    */
+/* ------------------------------------- */
+.hero-banner {
+	width:100%;
+	
+	.hero-bannerContainer{
+		display: table;
+		background-color: #f2f2f2;
+		padding:2%;
+
+		.banner-text, .banner-btn {
+		float:none;
+		display:table-cell;
+		vertical-align:middle;
+		}
+
+		p {
+			color:darken($base_fontColor, 1%);
+			font-size: $base_fontSize + 8;
+			@include text-shadow(0 1px 0 rgba(255,255,255,.27)); 
+			margin:0 4% 0 0;
+		}
+
+		.btn {
+			width:100%;
+		}
+	}
+}

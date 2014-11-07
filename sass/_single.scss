@@ -1,0 +1,47 @@
+/* ------------------------------------- */
+/* Single Page Styles                    */
+/* ------------------------------------- */
+#singlePostContainer {
+	.post-title {
+		margin:0;
+		line-height: 30px;
+	}
+
+	.post-meta {
+		display:table;
+		vertical-align:middle;
+		color: $theme_color;
+		margin:10px 0;
+
+		.author, .date, .fa, .comments {
+			display: table-cell;
+			vertical-align:middle;
+		}
+
+		.fa {
+			font-size: $base_fontSize - 8;
+			padding: 0 10px;
+		}
+	}
+
+	.post-info {
+		border-top:1px solid #DDD;
+		border-bottom:1px solid #DDD;
+		overflow:hidden;
+		margin:40px 0;
+
+		P {
+			float:left;
+			margin:5px 0;
+		}
+
+		.tags {
+			border-right: 1px solid #DDD;
+			padding-right: 10px;
+		}
+
+		.category {
+			margin-left: 10px;
+		}
+	}
+}

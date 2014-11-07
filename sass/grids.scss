@@ -1,0 +1,78 @@
+//* ------------------------------------------------------ */
+//*  Config                                                */
+//* ------------------------------------------------------ */
+$width: 1200px;
+$gutter: 2%;
+$columns: 12;
+$column_width: 100% / $columns;
+
+
+//* ------------------------------------------------------ */
+//*  Basics                                                */
+//* ------------------------------------------------------ */
+
+.container {
+	width:100%;
+	max-width: $width;
+	margin:0 auto;
+}
+
+.container:before,
+.container:after{
+	content: " ";
+	display:table;
+	float:none;
+	clear:both;
+}
+
+.grid {
+	display:inline;
+	float: left;
+	position: relative;
+	margin-left: $gutter / 2;
+	margin-right: $gutter / 2;
+	box-sizing:border-box;
+}
+
+.alpha {
+	margin-left: 0;
+}
+
+.omega {
+	margin-right: 0;
+}
+
+.relative{
+	position:relative;
+}
+
+
+//* ------------------------------------------------------ */
+//*  Loop                                                  */
+//* ------------------------------------------------------ */
+@for $i from 1 through $columns {
+	.grid_#{$i} {
+		width: $i * $column_width - $gutter;
+		@extend .grid;
+	}
+}
+
+@for $j from 1 to $columns {
+	.prefix_#{$j} {
+		padding-left: $j * $column_width;
+	}
+
+	.suffix_#{$j} {
+		padding-right: $j * $column_width;
+	}
+
+	.push_#{$j} {
+		@extend .relative;
+		left: $j * $column_width;
+	}
+
+	.pull_#{$j} {
+		@extend .relative;
+		left: -$j * $column_width;
+	}
+}
