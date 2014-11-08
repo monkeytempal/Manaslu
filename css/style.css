@@ -94,6 +94,37 @@ h6 {
   background: url(../img/loading.gif) center center no-repeat;
 }
 
+.heading {
+  margin-bottom: 20px;
+  border-bottom: 2px solid #DDD;
+  position: relative;
+}
+.heading h2 {
+  margin: 0;
+}
+.heading:before {
+  content: " ";
+  height: 2px;
+  width: 25%;
+  background: #00a388;
+  position: absolute;
+  bottom: -2px;
+}
+
+.control-group {
+  margin-bottom: 20px;
+}
+.control-group .controls {
+  overflow: hidden;
+  clear: both;
+}
+.control-group .controls .input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #DDD;
+  padding: 5px;
+}
+
 /* ------------------------------------- */
 /* Header Styles                         */
 /* ------------------------------------- */
@@ -569,36 +600,6 @@ h6 {
   margin-top: 20px;
 }
 
-#comment-form .form-header {
-  margin-bottom: 20px;
-  border-bottom: 2px solid #DDD;
-  position: relative;
-}
-#comment-form .form-header h2 {
-  margin: 0;
-}
-#comment-form .form-header :before {
-  content: " ";
-  height: 2px;
-  width: 25%;
-  background: #00a388;
-  position: absolute;
-  bottom: -2px;
-}
-#comment-form .control-group {
-  margin-bottom: 20px;
-}
-#comment-form .control-group .controls {
-  overflow: hidden;
-  clear: both;
-}
-#comment-form .control-group .controls .input {
-  width: 100%;
-  box-sizing: border-box;
-  border: 1px solid #DDD;
-  padding: 5px;
-}
-
 /* ----------------------------------------- */
 /* Sidebar Styles                            */
 /* ----------------------------------------- */
@@ -689,4 +690,9 @@ h6 {
   border: 0;
   margin: 0;
   padding: 0;
+}
+
+#mapContainer, #addressContainer {
+  margin-bottom: 40px;
+  overflow: hidden;
 }

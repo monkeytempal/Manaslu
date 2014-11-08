@@ -195,6 +195,18 @@ $base_fontSize: 12px;
 			display: none;
 		}
 	}
+
+
+	/* ----------------------------------------- */
+	/* Contact page Styles                       */
+	/* ----------------------------------------- */
+	#addressContainer {
+		.address {
+			margin-bottom: 10px;
+			padding-bottom: 10px;
+			border-bottom: 1px solid #DDD;
+		}
+	}
 }
 
 // Mobile Screen

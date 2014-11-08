@@ -49,7 +49,7 @@
 	    					<a href="blog.php">Blog</a>
 	    				</li>
 	    				<li>
-	    					<a href="#">Contact</a>
+	    					<a href="contact.php">Contact</a>
 	    				</li>
 	    			</ul>
 	    		</nav>
@@ -75,7 +75,7 @@
                             <a href="#">Blog</a>
                         </li>
                         <li>
-                            <a href="#">Contact</a>
+                            <a href="contact.php">Contact</a>
                         </li>
                     </ul>
                 </nav>

@@ -70,7 +70,7 @@
 
 <!--  Comment Form  -->
 <div id="comment-form" class="content">
-	<div class="form-header">
+	<div class="heading">
 		<h2>Leave a comment</h2>
 	</div>
 	

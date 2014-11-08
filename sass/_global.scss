@@ -67,3 +67,40 @@ h6 {font-size:$base_fontSize; color: $theme_color;}
 	display: block; 
 	background:url(../img/loading.gif) center center no-repeat;
 }
+
+// Global Form styles
+.heading {
+	margin-bottom:20px;
+
+	h2 {
+		margin:0;
+	}
+
+	border-bottom:2px solid #DDD;
+	position:relative;
+
+	&:before {
+		content: " ";
+		height:2px;
+		width:25%;
+		background:$theme_color;
+		position:absolute;
+		bottom:-2px;
+	}
+}
+
+.control-group {
+	margin-bottom: 20px;
+
+	.controls {
+		overflow: hidden;
+		clear:both;
+
+		.input {
+			width: 100%;
+			box-sizing: border-box;
+			border:1px solid #DDD;
+			padding: 5px;
+		}
+	}
+}
