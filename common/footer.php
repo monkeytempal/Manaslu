@@ -12,7 +12,7 @@
                         <ul>
                             <li>
                                 <figure class="item-image">
-                                    <img src="img/pattern.jpg" alt="" />
+                                    <img src="img/post3.jpg" alt="" />
                                 </figure>
 
                                 <div class="item-details">
@@ -23,7 +23,7 @@
 
                             <li>
                                 <figure class="item-image">
-                                    <img src="img/keywatch.jpg" alt="" />
+                                    <img src="img/post1.jpg" alt="" />
                                 </figure>
                                 
                                 <div class="item-details">
@@ -34,7 +34,7 @@
 
                             <li>
                                 <figure class="item-image">
-                                    <img src="img/commerce-sm.jpg" alt="" />
+                                    <img src="img/post4.jpg" alt="" />
                                 </figure>
                                 
                                 <div class="item-details">
