@@ -153,7 +153,7 @@
                     <article class="grid_3">
                         <header>
                             <figure class="post-image">
-                                <img src="img/post1.jpg" alt="" />
+                                <img class="lazy" data-original="img/post1.jpg" alt="" />
                             </figure>
 
                             <h4 class="post-title">Getting started with Web Design Career</h4>
@@ -171,7 +171,7 @@
                     <article class="grid_3">
                         <header>
                             <figure class="post-image">
-                                <img src="img/post2.jpg" alt="" />
+                                <img class="lazy" data-original="img/post2.jpg" alt="" />
                             </figure>
 
                             <h4 class="post-title">Create simple popup login and signup box with jQuery</h4>
@@ -189,7 +189,7 @@
                     <article class="grid_3">
                         <header>
                             <figure class="post-image">
-                                <img src="img/post3.jpg" alt="" />
+                                <img class="lazy" data-original="img/post3.jpg" alt="" />
                             </figure>
                             
                             <h4 class="post-title">Custom checkbox and Radio buttons with icon fonts</h4>
@@ -207,7 +207,7 @@
                     <article class="grid_3">
                         <header>
                             <figure class="post-image">
-                                <img src="img/post4.jpg" alt="" />
+                                <img class="lazy" data-original="img/post4.jpg" alt="" />
                             </figure>
                             
                             <h4 class="post-title">Good Office Morning with a Tea</h4>

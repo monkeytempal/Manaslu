@@ -89,11 +89,6 @@ h6 {
   float: right;
 }
 
-.preloader {
-  display: block;
-  background: url(../img/loading.gif) center center no-repeat;
-}
-
 .heading {
   margin-bottom: 20px;
   border-bottom: 2px solid #DDD;

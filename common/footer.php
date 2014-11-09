@@ -92,7 +92,7 @@
 
         <!-- Owl Carousel plugin -->
         <script src="plugins/owl-carousel/owl.carousel.min.js"></script>
-        <script src="plugins/preloader/jquery.preloader.js"></script>
+        <script src="plugins/lazyload/jquery.lazyload.min.js"></script>
 
         <script src="js/min/main.min.js"></script>
         <script src="http://localhost:35729/livereload.js"></script>

@@ -1,7 +1,10 @@
 $(function(){
 
-	// Initializing Prealoader on Latest posts
-	$(".latest-posts").preloader();
+	// Initializing Lazyload 
+	// http://www.appelsiini.net/projects/lazyload
+	$(".latest-posts img").lazyload({
+		effect : "fadeIn"
+	});
 
 	// Mobile Menu Scripts
 	$('.mobilenav-trigger').click(function(){
