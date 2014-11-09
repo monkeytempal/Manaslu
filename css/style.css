@@ -696,6 +696,9 @@ h6 {
   padding: 0;
 }
 
+/* ----------------------------------------- */
+/* Contact Page Styles                       */
+/* ----------------------------------------- */
 #mapContainer, #addressContainer {
   margin-bottom: 40px;
   overflow: hidden;
